@@ -1,17 +1,5 @@
-import React, { useEffect } from 'react';
-import styled from 'styled-components';
-import { Button } from '@react95/core';
+import { useEffect } from 'react';
 import { useClippy } from '@react95/clippy';
-
-import logo from './windows95_logo.png';
-
-const Centered = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-`;
 
 function App() {
   const { clippy } = useClippy();
@@ -22,12 +10,7 @@ function App() {
     }
   }, [clippy]);
 
-  return (
-    <Centered>
-      <img src={logo} alt="Windows 95 logo" style={{ width: 200 }} />
-      <Button>Start</Button>
-    </Centered>
-  );
+  return null;
 }
 
 export default App;
